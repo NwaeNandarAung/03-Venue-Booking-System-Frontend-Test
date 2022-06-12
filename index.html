@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venue Booking System</title>
+  <!-- import css file -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- import jquery online link -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <!-- import js file -->
+  <script type="text/javascript" src="assets/js/main.js"></script>
+  <script type="text/javascript" src="assets/js/tabs.js"></script>
+
+</head>
+
+<body>
+  <!-- start of card -->
+  <div class="card">
+    <div class="container">
+      <div class="row main-row">
+        <div class="col main-col-left">
+          <!-- start of display roomId -->
+          <div class="room-heading">
+            <h1 id="roomId"></h1>
+          </div>
+          <!-- end of display roomId -->
+
+          <!-- start of today booking details -->
+          <div class="today-booking-info">
+            <h5 class="upcoming-text">Upcoming</h5>
+            <p id="todayText" class="today-text"></p>
+            <p id="todayDateText" class="today-date-text"></p>
+            <div id="todayBookingDetails" class="today-booking-details"></div>
+          </div>
+          <!-- end of today booking details -->
+        </div>
+        <div class="col main-col-right">
+          <!-- start of tabs -->
+          <div class="tabs">
+            <!-- start of tab header section -->
+            <div class="tab-header-section">
+              <div class="tab-header">
+                <div class="active">
+                  This Week
+                </div>
+                <div>
+                  Next Week
+                </div>
+                <div>
+                  Whole Month
+                </div>
+              </div>
+              <div class="tab-indicator"></div>
+            </div>
+            <!-- end of tab header section -->
+
+            <!-- start of tab body section -->
+            <div class="tab-body">
+              <!-- start of first tab content -->
+              <div class="active tab-content">
+                <section class="this-week-booking-details" id="thisSundayBookingList">
+                  <aside class="booking-date" id="thisSundaybookingDate"></aside>
+                  <ul class="booking-details" id="thisSundaybookingDetails"></ul>
+                </section>
+                <section class="this-week-booking-details" id="thisMondayBookingList">
+                  <aside class="booking-date" id="thisMondaybookingDate"></aside>
+                  <ul class="booking-details" id="thisMondaybookingDetails"></ul>
+                </section>
+                <section class="this-week-booking-details" id="thisTuesdayBookingList">
+                  <aside class="booking-date" id="thisTuesdaybookingDate"></aside>
+                  <ul class="booking-details" id="thisTuesdaybookingDetails"></ul>
+                </section>
+                <section class="this-week-booking-details" id="thisWednesdayBookingList">
+                  <aside class="booking-date" id="thisWednesdaybookingDate"></aside>
+                  <ul class="booking-details" id="thisWednesdaybookingDetails"></ul>
+                </section>
+                <section class="this-week-booking-details" id="thisThursdayBookingList">
+                  <aside class="booking-date" id="thisThursdaybookingDate"></aside>
+                  <ul class="booking-details" id="thisThursdaybookingDetails"></ul>
+                </section>
+                <section class="this-week-booking-details" id="thisFridayBookingList">
+                  <aside class="booking-date" id="thisFridaybookingDate"></aside>
+                  <ul class="booking-details" id="thisFridaybookingDetails"></ul>
+                </section>
+                <section class="this-week-booking-details" id="thisSaturdayBookingList">
+                  <aside class="booking-date" id="thisSaturdaybookingDate"></aside>
+                  <ul class="booking-details" id="thisSaturdaybookingDetails"></ul>
+                </section>
+              </div>
+              <!-- end of first tab content -->
+
+              <!-- start of second tab content -->
+              <div>
+                <h2>Coming Soon ...</h2>
+              </div>
+              <!-- end of second tab content -->
+
+              <!-- start of third tab content -->
+              <div>
+                <h2>Coming Soon ...</h2>
+              </div>
+              <!-- end of third tab content -->
+            </div>
+            <!-- end of tab body section -->
+          </div>
+          <!-- end of tabs -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of card -->
+</body>
+
+</html>

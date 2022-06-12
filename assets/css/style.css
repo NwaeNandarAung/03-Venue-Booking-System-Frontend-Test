@@ -1,0 +1,235 @@
+/* fonts */
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Light.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../fonts/Roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../fonts/Roboto/Roboto-Medium.ttf");
+}
+
+body {
+  background-color: #bcc2d1;
+  font-family: "Roboto-Light";
+}
+
+.container {
+  padding: 80px 50px;
+}
+
+.card {
+  width: 100%;
+  height: 100%
+}
+
+.main-row {
+  padding: 0;
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+}
+
+.main-row .main-col-left {
+  width: 35%;
+  background-color: #46529e;
+}
+
+.main-row .main-col-right {
+  width: 65%;
+  background-color: #ffffff;
+}
+
+/* today booking */
+.room-heading {
+  background-color: #2ebaef;
+  margin-left: 18%;
+}
+
+.room-heading h1 {
+  margin-top: 0;
+  color: #fff;
+  padding: 40px 15px 15px 30px;
+  font-size: 40px;
+  font-family: "Roboto-Medium";
+}
+
+.today-booking-info {
+  margin-left: 18%;
+}
+
+.today-booking-info h5,
+.today-booking-info p {
+  color: white;
+}
+
+.today-booking-info .upcoming-text {
+  padding-top: 50px;
+  font-family: "Lato";
+}
+
+.today-booking-info .today-text {
+  opacity: 0.5;
+  font-size: 50px;
+  font-family: "Lato";
+}
+
+.today-booking-info .today-date-text {
+  font-size: 50px;
+  margin-top: -50px;
+  font-family: "Lato";
+}
+
+.today-booking-details .time {
+  opacity: 0.5;
+}
+
+/* this week booking */
+.this-week-booking-details .booking-date {
+  background-color: #F7F7F7;
+  padding: 1px 0;
+}
+
+.this-week-booking-details .booking-date h5 {
+  padding-left: 80px;
+  color: #787878;
+  font-family: "Roboto-Medium";
+}
+
+.this-week-booking-details .booking-details .time {
+  color:#787878;
+  font-size: 16px;
+  font-family: "Roboto-Light";
+}
+
+.this-week-booking-details .booking-details .description {
+  color:#000;
+  font-size: 16px;
+  font-family: "Roboto-Light";
+  font-weight: bold;
+}
+
+ul.booking-details {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+ul.booking-details li {
+  padding-left: 50px;
+  margin-bottom: 2.5em;
+  list-style: none;
+}
+
+/* borders and bullets */
+ul.booking-details li {
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: 2.5em;
+}
+
+ul.booking-details li:after {
+  /* bullets */
+  content: '';
+  position: absolute;
+  bottom: 30px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #23CF5F;
+  left: -20px;
+  top: 0px;
+}
+
+ul.booking-details li:before {
+  /* lines */
+  content: "";
+  position: absolute;
+  left: -16px;
+  border-left: 1px solid #ECECEC;
+  height: 100%;
+  width: 1px;
+}
+
+ul.booking-details li:first-child:before {
+  top: 10px;
+}
+
+ul.booking-details li:last-child:before {
+  height: 6px;
+}
+
+/* tabs */
+.tabs {
+  width: 100%;
+  height: 100%;
+}
+
+.tabs .tab-header-section {
+  background-color: #EFEEEC;
+  padding: 40px 0px 0px 0px;
+}
+
+.tabs .tab-header-section .tab-header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.tabs .tab-header>div {
+  width: calc(100% / 5);
+  text-align: center;
+  color: #888;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.tabs .tab-header>div>i {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.tabs .tab-header>div.active {
+  color: #000;
+}
+
+.tabs .tab-indicator {
+  position: relative;
+  width: calc(100% / 5);
+  height: 5px;
+  background: #707FDD;
+  border-radius: 5px;
+}
+
+.tabs .tab-body {
+  position: relative;
+  height: calc(100% - 120px);
+  overflow-y: auto;
+}
+
+.tabs .tab-body>div {
+  position: absolute;
+  top: -200%;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 500ms ease-in-out 0ms,
+    transform 500ms ease-in-out 0ms;
+}
+
+.tabs .tab-body>div.active {
+  top: 0px;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.tabs .tab-body>.tab-content {
+  width: 100%;
+  padding-top: 10px;
+}
